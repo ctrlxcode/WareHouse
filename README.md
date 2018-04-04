@@ -1,3 +1,3 @@
-Project smartRepair
+Project WareHouse
 
-smartRepair created by yii2 framework basic template 
+WareHouse created by yii2 framework basic template 
