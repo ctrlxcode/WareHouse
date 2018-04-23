@@ -1,5 +1,8 @@
 <?php
 /* @var $this yii\web\View */
+
+use yii\helpers\Html;
+
 $this->title = 'ตั้งค่า';
 ?>
 <div class="row">
@@ -17,7 +20,7 @@ $this->title = 'ตั้งค่า';
                                 <i class="fa fa-reorder fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div>จัดการเมนู</div>
+                                <div><?=Html::a('จัดการเมนู',['menus/index']);?></div>
                             </div>
                         </div>
                     </div>
@@ -32,7 +35,7 @@ $this->title = 'ตั้งค่า';
                                 <i class="fa fa-users fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div>จัดการผู้ใช้</div>
+                                <div><?=Html::a('จัดการผู้ใช้',['user/admin']);?></div>
                             </div>
                         </div>
                     </div>
