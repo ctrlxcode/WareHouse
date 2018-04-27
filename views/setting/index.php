@@ -96,22 +96,22 @@ $this->title = 'ตั้งค่า';
                    
                 </div>
             </div>
-<!--             <div class="col-lg-3 col-md-6">
-                <div class="panel panel-success">
+             <div class="col-lg-3 col-md-6">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-xs-3">
-                                <i class="fa fa-users fa-5x"></i>
+                                <i class="fa fa-map-signs fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div>จัดการผู้ใช้</div>
+                                <div><?=Html::a('ตั้งค่าแผนก/ฝ่าย',['depart/index'],['style'=>'color:white']);?></div>
                             </div>
                         </div>
                     </div>
                    
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+<!--            <div class="col-lg-3 col-md-6">
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <div class="row">
