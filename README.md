@@ -1,7 +1,7 @@
---------------------------------------------- 
-- Chiangmai Team Revolution of Learning eXecute
+---------------------------------------------------- 
+- Chiangmai Team Revolution of Learning and eXecute
 - </ C T R L X >                                 
---------------------------------------------- 
+---------------------------------------------------- 
 
 Project WareHouse
 
