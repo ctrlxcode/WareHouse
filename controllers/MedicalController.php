@@ -14,7 +14,7 @@ use dektrium\user\filters\AccessRule;
 /**
  * ComputerController implements the CRUD actions for AssetMaster model.
  */
-class ComputerController extends Controller
+class MedicalController extends Controller
 {
     /**
      * @inheritdoc
@@ -51,7 +51,7 @@ class ComputerController extends Controller
     {
         $searchModel = new AssetMasterSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $dataProvider->query->andWhere('groupid = 03');
+        $dataProvider->query->andWhere('groupid = 01');
 
         $dataProvider->pagination->pageSize=15;
 
