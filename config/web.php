@@ -27,6 +27,7 @@ $config = [
             'allowActions' => [
                 'site/*',
                 'admin/*',
+                'user/settings/*',
             ]
     ],
     'components' => [
