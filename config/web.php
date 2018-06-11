@@ -26,8 +26,6 @@ $config = [
             'class' => 'mdm\admin\components\AccessControl',
             'allowActions' => [
                 'site/*',
-                'admin/*',
-                'user/settings/*',
             ]
     ],
     'components' => [
