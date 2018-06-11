@@ -3,6 +3,10 @@
 - </ C T R L X >                                 
 ---------------------------------------------------- 
 
+gogo test edit readme  11/6/2018 เด้อ
+
+
+
 Project WareHouse
 
 WareHouse created by yii2 framework basic template 
