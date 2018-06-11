@@ -35,6 +35,10 @@ class ComposerStaticInitae51d3f084c3d284483f702558567b6a
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'm' => 
+        array (
+            'mdm\\admin\\' => 10,
+        ),
         'k' => 
         array (
             'kartik\\select2\\' => 15,
@@ -137,6 +141,10 @@ class ComposerStaticInitae51d3f084c3d284483f702558567b6a
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'mdm\\admin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
         ),
         'kartik\\select2\\' => 
         array (
