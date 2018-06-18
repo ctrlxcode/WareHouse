@@ -7,12 +7,16 @@ use yii\helpers\Html;
 /* @var $model app\models\Items */
 
 $this->title = 'เพิ่มวัสดุ';
-$this->params['breadcrumbs'][] = ['label' => 'Items', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = ['label' => 'Items', 'url' => ['index']];
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="items-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="row">
+	    <div class="col-lg-12">
+	            <h1 class="page-header"><i class="fa fa-plus fa-fw"></i> เพิ่มวัสดุ</h1>
+	    </div>
+	</div> 
 
     <?= $this->render('_form', [
         'model' => $model,

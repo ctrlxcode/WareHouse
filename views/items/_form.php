@@ -23,7 +23,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'type_id')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', '<i class="fa fa-save"></i> บันทึก') : Yii::t('app', '<i class="fa fa-save"></i> บันทึกแก้ไข'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
     </div>
 
     <?php ActiveForm::end(); ?>
