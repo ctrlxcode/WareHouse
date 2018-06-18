@@ -12,12 +12,24 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="items-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="row">
+         <div class="col-lg-12">
+                 <h1 class="page-header"><i class="fa fa-cubes fa-fw"></i> <?= Html::encode($this->title) ?></h1>
+         </div>        
+    </div>
+
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('เพิ่มวัสดุ', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="page-header" style="padding-left: 10px;">
+                <h2>รายการวัสดุ</h2>
+            </div>
+        </div>
+        <div class="panel-body">
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -33,4 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-<?php Pjax::end(); ?></div>
+<?php Pjax::end(); ?>
+    </div>
+    </div>
+</div>
