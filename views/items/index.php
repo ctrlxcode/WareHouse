@@ -133,7 +133,42 @@ $this->params['breadcrumbs'][] = $this->title;
             'items_price',
             'type_id',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [   'class' => 'yii\grid\ActionColumn', 
+                // 'visible' => (Yii::$app->user->identity->isAdmin),
+                'template' => Yii::$app->user->identity->isAdmin ? '{view} {update} {delete}' : '{view}',
+                'headerOptions' => ['width' => '12%', 'class' => 'activity-view-link',],        
+                    'contentOptions' => ['class' => 'padding-left-5px', 'align' => 'middle', 'noWrap' => true],
+
+                'buttons' => [
+                    'view' => function ($url, $model, $key) {
+                        return Html::a(
+                        '<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                        'class' => 'btn btn-info btn-xs',
+                        'data-toggle' => 'modal', 'data-target' => '#modalView',
+                        'data-title' => 'Detail Data']
+                        );
+                    },
+                    'update' => function ($url, $model, $key) {
+                        return Html::a(
+                        '<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                        'class' => 'btn btn-success btn-xs',
+                        'data-toggle' => 'modal', 'data-target' => '#modalUpdate',
+                        'data-title' => 'Update Data']
+                        );
+                    },
+                    'delete' => function ($url, $model, $key) {
+                        return Html::a(
+                        '', $url, [
+                        'class' => 'btn btn-danger btn-xs glyphicon glyphicon-trash popup-modal',
+                        'data-toggle' => 'modal', 'data-target' => '#modalDelete',
+                        'data-id'     => $model->items_code,'data-name'   => $model->items_code,
+                        'data-title' => 'Delete Data','id' => 'popupModal']
+                        );
+                    },
+                ],
+
+
+            ],
         ],
     ]); ?>
 <?php Pjax::end(); ?>
