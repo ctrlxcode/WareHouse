@@ -132,11 +132,11 @@ $asset_path = Yii::$app->assetManager->getPublishedUrl('@app/themes/repair/asset
 <?php
                         if (!Yii::$app->user->isGuest){
                        ?>
-                       <li><a href="<?= Url::to(['/user/security/logout'])?>" data-method="post"><i class="glyphicon glyphicon-log-in"></i> ออกจากระบบ </a></li>
+                       <li><a href="<?= Url::to(['/user/security/logout'])?>" data-method="post"><i class="glyphicon glyphicon-log-out"></i> ออกจากระบบ </a></li>
                        <?php } else {
                             echo '<li><a href="?r=user/security/login" ';
                             if(@addslashes($_GET['r']) == "user/security/login"){ echo 'class="active"';}
-                            echo '><i class="fa fa-users fa-fw"></i> เข้าสู่ระบบ </a></li>'; 
+                            echo '><i class="glyphicon glyphicon-log-in"></i> เข้าสู่ระบบ </a></li>'; 
                         }?>  </ul>
                 </div>
 
