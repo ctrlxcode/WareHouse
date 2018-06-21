@@ -3006,51 +3006,6 @@
         ]
     },
     {
-        "name": "codeception/phpunit-wrapper",
-        "version": "7.1.3",
-        "version_normalized": "7.1.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Codeception/phpunit-wrapper.git",
-            "reference": "6a6244340e942a8d88cd9579d23c80b0ba10d46d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/6a6244340e942a8d88cd9579d23c80b0ba10d46d",
-            "reference": "6a6244340e942a8d88cd9579d23c80b0ba10d46d",
-            "shasum": ""
-        },
-        "require": {
-            "phpunit/php-code-coverage": "^6.0",
-            "phpunit/phpunit": "^7.1",
-            "sebastian/comparator": "^3.0",
-            "sebastian/diff": "^3.0"
-        },
-        "require-dev": {
-            "codeception/specify": "*",
-            "vlucas/phpdotenv": "^2.4"
-        },
-        "time": "2018-05-22 09:20:59",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Codeception\\PHPUnit\\": "src\\"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Davert",
-                "email": "davert.php@resend.cc"
-            }
-        ],
-        "description": "PHPUnit classes used by Codeception"
-    },
-    {
         "name": "symfony/polyfill-ctype",
         "version": "v1.8.0",
         "version_normalized": "1.8.0.0",
@@ -3847,5 +3802,50 @@
             "widget",
             "yii2"
         ]
+    },
+    {
+        "name": "codeception/phpunit-wrapper",
+        "version": "7.1.4",
+        "version_normalized": "7.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Codeception/phpunit-wrapper.git",
+            "reference": "f18ed631f1eddbb603d72219f577d223b23a1f89"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/f18ed631f1eddbb603d72219f577d223b23a1f89",
+            "reference": "f18ed631f1eddbb603d72219f577d223b23a1f89",
+            "shasum": ""
+        },
+        "require": {
+            "phpunit/php-code-coverage": "^6.0",
+            "phpunit/phpunit": "^7.1",
+            "sebastian/comparator": "^3.0",
+            "sebastian/diff": "^3.0"
+        },
+        "require-dev": {
+            "codeception/specify": "*",
+            "vlucas/phpdotenv": "^2.4"
+        },
+        "time": "2018-06-20 20:07:21",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Codeception\\PHPUnit\\": "src\\"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Davert",
+                "email": "davert.php@resend.cc"
+            }
+        ],
+        "description": "PHPUnit classes used by Codeception"
     }
 ]
