@@ -106,7 +106,7 @@ class EducationController extends Controller
             // return $this->redirect(['view', 'id' => $model->code]);
             return $this->redirect(['index']);
         } else {
-            return $this->renderAjax('update', [
+            return $this->render('update', [
                 'model' => $model,
             ]);
         }

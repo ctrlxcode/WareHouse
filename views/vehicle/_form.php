@@ -4,6 +4,9 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
+use dosamigos\datepicker\DatePicker;
+
+
 
 /* @var $this yii\web\View */
 /* @var $model app\models\AssetMaster */
@@ -12,12 +15,22 @@ use yii\helpers\ArrayHelper;
 
 <div class="asset-master-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <div class="row">
         <div class="col-md-4"><?= $form->field($model, 'sap_code')->textInput(['maxlength' => true]) ?></div>
         <div class="col-md-4"><?= $form->field($model, 'budget_year')->textInput(['maxlength' => true]) ?></div>
-        <div class="col-md-4"><?= $form->field($model, 'regis_date')->textInput() ?></div>
+        <div class="col-md-4"><?= $form->field($model, 'regis_date')->widget(
+                        DatePicker::className(), [
+                        'language' => 'th',
+                        'inline' => false,
+                        'options'=>[
+                                // 'disabled' => true, 
+                            ],   
+                        'clientOptions' => [                            
+                            'todayHighlight'=>true,
+                            'autoclose' => true,
+                            'format' => 'yyyy-mm-dd']]) ?></div>
     </div>
 
     <div class="row">
@@ -58,13 +71,33 @@ use yii\helpers\ArrayHelper;
     </div>
 
     <div class="row">
-        <div class="col-md-4"><?= $form->field($model, 'pur_date')->textInput() ?></div>
+        <div class="col-md-4"><?= $form->field($model, 'pur_date')->widget(
+                        DatePicker::className(), [
+                        'language' => 'th',
+                        'inline' => false,
+                        'options'=>[
+                                // 'disabled' => true, 
+                            ],   
+                        'clientOptions' => [                            
+                            'todayHighlight'=>true,
+                            'autoclose' => true,
+                            'format' => 'yyyy-mm-dd']]) ?></div>
         <div class="col-md-4"><?= $form->field($model, 'doc_no')->textInput(['maxlength' => true]) ?></div>
         <div class="col-md-4"><?= $form->field($model, 'pur_docno')->textInput(['maxlength' => true]) ?></div>
     </div>
 
     <div class="row">
-        <div class="col-md-4"><?= $form->field($model, 'receive_date')->textInput() ?></div>
+        <div class="col-md-4"><?= $form->field($model, 'receive_date')->widget(
+                        DatePicker::className(), [
+                        'language' => 'th',
+                        'inline' => false,
+                        'options'=>[
+                                // 'disabled' => true, 
+                            ],   
+                        'clientOptions' => [                            
+                            'todayHighlight'=>true,
+                            'autoclose' => true,
+                            'format' => 'yyyy-mm-dd']]) ?></div>
         <div class="col-md-4"><?= $form->field($model, 'bud_id')->textInput(['maxlength' => true]) ?></div>
         <div class="col-md-4"><?= $form->field($model, 'a_status')->dropDownList(ArrayHelper::map(app\models\AssetAstatus::find()->asArray()->all(), 'a_status', 'descriptions'),['prompt'=>'--เลือกสถานะ--']) ?></div>
     </div>

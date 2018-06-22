@@ -7,7 +7,7 @@ use yii\grid\GridView;
 use yii\helpers\ArrayHelper; 
  
 /* @var $this yii\web\View */
-$this->title = 'ครุภัณฑ์คอมพิวเตอร์';
+$this->title = 'ครุภัณฑ์ไฟฟ้าและวิทยุ';
 // $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
@@ -174,7 +174,7 @@ $this->title = 'ครุภัณฑ์คอมพิวเตอร์';
                         return Html::a(
                         '<span class="glyphicon glyphicon-pencil"></span>', $url, [
                         'class' => 'btn btn-success btn-xs',
-                        'data-toggle' => 'modal', 'data-target' => '#modalUpdate',
+                        // 'data-toggle' => 'modal', 'data-target' => '#modalUpdate',
                         'data-title' => 'Update Data']
                         );
                     },

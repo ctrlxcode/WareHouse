@@ -174,7 +174,7 @@ $this->title = 'ครุภัณฑ์การเกษตร';
                         return Html::a(
                         '<span class="glyphicon glyphicon-pencil"></span>', $url, [
                         'class' => 'btn btn-success btn-xs',
-                        'data-toggle' => 'modal', 'data-target' => '#modalUpdate',
+                        // 'data-toggle' => 'modal', 'data-target' => '#modalUpdate',
                         'data-title' => 'Update Data']
                         );
                     },

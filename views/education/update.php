@@ -16,7 +16,7 @@ $this->title = Yii::t('app', 'Update {modelClass}: ', [
 
     <div class="row">
 	    <div class="col-lg-12">
-	            <h1 class="page-header"><i class="fa fa-pencil fa-fw"></i> แก้ไขครุภัณฑ์การศึกษา : <?=$model->sap_code;?></h1>
+	            <h1 class="page-header"><i class="glyphicon glyphicon-pencil"></i> แก้ไขครุภัณฑ์การศึกษา : <?=$model->sap_code;?></h1>
 	    </div>
 	</div>   
 	<!-- <div class="row">
