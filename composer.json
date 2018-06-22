@@ -21,7 +21,8 @@
         "dektrium/yii2-user": "^0.9.12",
         "rmrevin/yii2-fontawesome": ">=2.16.0",
         "dektrium/yii2-rbac": "1.0.0-alpha@dev",
-        "mdmsoft/yii2-admin": "~2.0"
+        "mdmsoft/yii2-admin": "~2.0",
+        "2amigos/yii2-date-picker-widget": "~1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
