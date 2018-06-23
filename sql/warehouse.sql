@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : MySQL_XAMPP
+Source Server         : WareHouse_Jomtong
 Source Server Version : 50505
-Source Host           : localhost:3306
+Source Host           : 118.175.29.211:3306
 Source Database       : warehouse
 
 Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-06-11 20:42:50
+Date: 2018-06-23 16:34:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -164,25 +164,25 @@ CREATE TABLE `asset_master` (
   KEY `floorno` (`floorno`),
   KEY `IX_computer` (`sap_code`),
   KEY `roomno` (`roomno`)
-) ENGINE=MyISAM AUTO_INCREMENT=134 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=136 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of asset_master
 -- ----------------------------
-INSERT INTO `asset_master` VALUES ('19', '7440-002-0001-003', '2541', '2555-02-16 00:00:00', 'Printer', 'G001', '', 'ชั้น 1 (OPD)', '', '03', '005', 'Epson', 'Dot Matrix', 'LQ 300', '', '8500.00', '2541-01-01 00:00:00', '', '', '2541-01-01 00:00:00', '', '', '', '3');
-INSERT INTO `asset_master` VALUES ('20', '7440-001-0001-008', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'D001', null, 'ชั้น 1 (ห้องฟัน)', null, '03', '001', null, 'Hard Disk 426, Ram 32 Mb.', 'celeron 366', null, '21500.00', '2542-06-11 00:00:00', null, '01/0038', '2542-06-11 00:00:00', null, 'cpu+จอ เสียซ่อมไม่ได้', null, '3');
-INSERT INTO `asset_master` VALUES ('21', '7440-001-0001-009', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'F002', null, 'ชั้น 1 (ผู้ป่วย ญ)', null, '03', '001', null, 'Hard Disk 426, Ram 32 Mb.', null, null, '21500.00', '2542-06-11 00:00:00', null, '01/0038', '2542-06-11 00:00:00', null, 'cpu+จอ เสียซ่อมไม่ได้', null, '3');
-INSERT INTO `asset_master` VALUES ('22', '7440-001-0001-010', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, 'Hard Disk 4.3 Gb. Ram 32 Mb.', null, null, '22898.00', '2542-08-04 00:00:00', null, '05/0246', null, null, 'cpu+จอ เสียซ่อมไม่ได้', null, '3');
-INSERT INTO `asset_master` VALUES ('23', '7440-002-0001-004', '2542', '2555-02-16 00:00:00', 'Printer', 'D001', null, 'ชั้น 1 (ห้องฟัน)', null, '03', '005', 'Epson', null, 'LQ 300', null, '8775.00', '2542-06-11 00:00:00', null, '01/0038', '2542-06-11 00:00:00', null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('24', '7440-002-0001-005', '2542', '2555-02-16 00:00:00', 'Printer', 'F001', '', 'ชั้น 2 (ผู้ป่วย ช)', '', '03', '005', 'Epson', '', 'LQ 300', '', '8775.00', '2542-06-11 00:00:00', '', '01/0038', '2542-06-11 00:00:00', '', '', '', '3');
-INSERT INTO `asset_master` VALUES ('26', '7440-002-0001-007', '2542', '2555-02-16 00:00:00', 'Printer', 'E001', '', 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '03', '005', 'Epson', '', 'LQ 670', '', '16500.00', '2542-01-01 00:00:00', '', '', null, '', '', '', '5');
-INSERT INTO `asset_master` VALUES ('27', '7440-002-0001-008', '2542', '2555-02-16 00:00:00', 'Printer', 'C001', null, 'ชั้น 1', null, '03', '005', 'Epson', null, 'LQ 2070', null, '8775.00', '2542-10-23 00:00:00', null, '11/05/04', '2542-10-23 00:00:00', null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('30', '7440-001-0001-017', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ประมวลผลทั่วไป', 'G001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, 'Hard Disk 4.3 Gb. Ram 32 Mb.', 'celeron 466', null, '20580.00', '2543-01-01 00:00:00', null, '02/0054', null, null, 'cpu+จอ เสียซ่อมไม่ได้', null, '3');
-INSERT INTO `asset_master` VALUES ('31', '7440-001-0001-018', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Socos', 'A001', '', 'ชั้น 1', 'งานเอดส์', '03', '001', '', '', '', '', null, '2543-10-01 00:00:00', '', '', '2543-10-01 00:00:00', '', 'cpu เสียซ่อมไม่ได้', '', '5');
+INSERT INTO `asset_master` VALUES ('19', '7440-002-0001-003', '2541', '2555-02-16 00:00:00', 'Printer', 'G001', '', 'ชั้น 1 (OPD)', '', '01', '', 'Epson', 'Dot Matrix', 'LQ 300', '', '8500.00', '2541-01-01 00:00:00', '', '', '2541-01-01 00:00:00', '', '', '', '4');
+INSERT INTO `asset_master` VALUES ('20', '7440-001-0001-008', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'D001', '', 'ชั้น 1 (ห้องฟัน)', '', '02', '', '', 'Hard Disk 426, Ram 32 Mb.', 'celeron 366', '', '21500.00', '2542-06-11 00:00:00', '', '01/0038', '2542-06-11 00:00:00', '', 'cpu+จอ เสียซ่อมไม่ได้', '', '3');
+INSERT INTO `asset_master` VALUES ('21', '7440-001-0001-009', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'F002', '', 'ชั้น 1 (ผู้ป่วย ญ)', '', '04', '', '', 'Hard Disk 426, Ram 32 Mb.', '', '', '21500.00', '2542-06-11 00:00:00', '', '01/0038', '2542-06-11 00:00:00', '', 'cpu+จอ เสียซ่อมไม่ได้', '', '3');
+INSERT INTO `asset_master` VALUES ('22', '7440-001-0001-010', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'B001', '', 'ชั้น 1 (OPD)', '', '05', '', '', 'Hard Disk 4.3 Gb. Ram 32 Mb.', '', '', '22898.00', '2542-08-04 00:00:00', '', '05/0246', null, '', 'cpu+จอ เสียซ่อมไม่ได้', '', '3');
+INSERT INTO `asset_master` VALUES ('23', '7440-002-0001-004', '2542', '2555-02-16 00:00:00', 'Printer', 'D001', '', 'ชั้น 1 (ห้องฟัน)', '', '06', '', 'Epson', '', 'LQ 300', '', '8775.00', '2542-06-11 00:00:00', '', '01/0038', '2542-06-11 00:00:00', '', '', '', '3');
+INSERT INTO `asset_master` VALUES ('24', '7440-002-0001-005', '2542', '2555-02-16 00:00:00', 'Printer', 'F001', '', 'ชั้น 2 (ผู้ป่วย ช)', '', '07', '', 'Epson', '', 'LQ 300', '', '8775.00', '2542-06-11 00:00:00', '', '01/0038', '2542-06-11 00:00:00', '', '', '', '3');
+INSERT INTO `asset_master` VALUES ('26', '7440-002-0001-007', '2542', '2555-02-16 00:00:00', 'Printer', 'E001', '', 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '08', '', 'Epson', '', 'LQ 670', '', '16500.00', '2542-01-01 00:00:00', '', '', null, '', '', '', '5');
+INSERT INTO `asset_master` VALUES ('27', '7440-002-0001-008', '2542', '2555-02-16 00:00:00', 'Printer', 'C001', '', 'ชั้น 1', '', '09', '', 'Epson', '', 'LQ 2070', '', '8775.00', '2542-10-23 00:00:00', '', '11/05/04', '2542-10-23 00:00:00', '', '', '', '3');
+INSERT INTO `asset_master` VALUES ('30', '7440-001-0001-017', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ประมวลผลทั่วไป', 'G001', '', 'ชั้น 1 (OPD)', '', '10', '', '', 'Hard Disk 4.3 Gb. Ram 32 Mb.', 'celeron 466', '', '20580.00', '2543-01-01 00:00:00', '', '02/0054', null, '', 'cpu+จอ เสียซ่อมไม่ได้', '', '3');
+INSERT INTO `asset_master` VALUES ('31', '7440-001-0001-018', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Socos', 'A001', '', 'ชั้น 1', 'งานเอดส์', '11', '', '', '', '', '', null, '2543-10-01 00:00:00', '', '', '2543-10-01 00:00:00', '', 'cpu เสียซ่อมไม่ได้', '', '5');
 INSERT INTO `asset_master` VALUES ('32', '7440-001-0001-019', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Visage SD', 'F006', null, 'ชั้น 1 (OPD)', 'ห้องตรวจ 1', '03', '001', null, null, null, null, null, '2543-10-01 00:00:00', null, null, '2543-10-01 00:00:00', null, 'cpu เสียซ่อมไม่ได้\r\nจอ อยู่ WARD ชาย', null, '3');
 INSERT INTO `asset_master` VALUES ('33', '7440-001-0001-020', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Visage SD', 'F006', null, 'ชั้น 1 (OPD)', 'ห้องตรวจ 2', '03', '001', null, null, null, null, null, '2543-10-01 00:00:00', null, null, '2543-10-01 00:00:00', null, 'จอ เสียซ่อมไม่ได้\r\n', null, '3');
 INSERT INTO `asset_master` VALUES ('34', '7440-001-0001-021', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Micro Scan', 'H001', null, 'ชั้น 1 (OPD)', 'ห้องตรวจ 3', '03', '001', null, null, null, null, null, '2543-10-01 00:00:00', null, null, '2543-10-01 00:00:00', null, 'cpu เสียซ่อมไม่ได้', null, '3');
-INSERT INTO `asset_master` VALUES ('35', '7440-001-0001-022', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Visage SD', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, null, null, null, null, '2543-10-01 00:00:00', null, null, null, null, 'cpu+จอ เสีย ซ่อมไม่ได้', null, '3');
+INSERT INTO `asset_master` VALUES ('35', '7440-001-0001-022', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Visage SD', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, null, null, null, null, '2543-10-01 00:00:00', null, null, null, null, 'cpu+จอ เสีย ซ่อมไม่ได้', null, '3');
 INSERT INTO `asset_master` VALUES ('36', '7440-001-0001-023', '2543', '2555-02-16 00:00:00', 'คอมพิวเตอร์ Visage SD', 'C002', null, 'ชั้น 1', null, '03', '001', null, null, null, null, null, '2543-10-01 00:00:00', null, null, null, null, 'cpu เสีย ซ่อมไม่ได้', null, '3');
 INSERT INTO `asset_master` VALUES ('37', '7440-001-0001-011', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'E000', null, 'ชั้น 2 (บริหาร)', null, '03', '001', null, 'Hard Disk 4.3 Gb. Ram 32 Mb.', null, null, '22898.00', '2542-08-04 00:00:00', null, '05/0246', '2542-08-04 00:00:00', null, 'cpu+จอ เสียซ่อมไม่ได้', null, '3');
 INSERT INTO `asset_master` VALUES ('38', '7440-001-0001-012', '2542', '2555-02-16 00:00:00', 'คอมพิวเตอร์ อัลฟ่า', 'G001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, 'Hard Disk 4.3 Gb. Ram 32 Mb.', 'Pentium celeron 33', null, '23200.00', '2542-01-01 00:00:00', null, null, null, null, 'cpu เสียซ่อมไม่ได้', null, '3');
@@ -194,13 +194,13 @@ INSERT INTO `asset_master` VALUES ('43', '7440-001-0001-024', '2545', '2555-02-1
 INSERT INTO `asset_master` VALUES ('44', '7440-001-0001-025', '2545', '2555-02-16 00:00:00', 'คอมพิวเตอร์ ', 'L001', null, 'ชั้น 1 (OPD)', 'Lab', '03', '001', null, 'cpu, Monitor Accuvision', null, null, null, '2545-12-01 00:00:00', null, null, null, null, 'ใช้เงินห้อง lab ซื้อเอง', null, '1');
 INSERT INTO `asset_master` VALUES ('45', '7440-002-0001-011', '2545', '2555-02-16 00:00:00', 'Printer', 'E000', null, 'ชั้น 2 (บริหาร)', 'ฝ่ายบริหารทั่วไป', '03', '005', 'Canon', null, null, null, null, '2545-06-24 00:00:00', null, 'IV06-0647', '2545-06-24 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('46', '7440-002-0001-012', '2545', '2555-02-16 00:00:00', 'Printer', 'C001', null, 'ชั้น 1', 'ฝ่ายยุทธศาสตร์', '03', '005', 'Canon', null, null, null, null, '2545-07-12 00:00:00', null, 'IV 07-0497', '2545-07-12 00:00:00', null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('47', '7440-007-0001-002', '2545', '2555-02-16 00:00:00', 'Switch HUB 16 port', 'ฺB001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '003', 'SureCom', '16 port', null, null, '9100.00', '2545-06-26 00:00:00', null, '50/2470', '2545-06-26 00:00:00', null, null, null, '1');
+INSERT INTO `asset_master` VALUES ('47', '7440-007-0001-002', '2545', '2555-02-16 00:00:00', 'Switch HUB 16 port', 'B001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '003', 'SureCom', '16 port', null, null, '9100.00', '2545-06-26 00:00:00', null, '50/2470', '2545-06-26 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('48', '7440-001-0007-001', '2546', '2555-02-16 00:00:00', 'Acer Travel Mate 230', 'E000', null, 'ชั้น 1 (OPD)', null, '03', '002', 'ACER', 'cpu celeron 2.4GHz', 'Travel Mate 230', null, '42693.00', '2546-02-18 00:00:00', null, null, '2546-02-18 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('49', '7440-001-0007-002', '2546', '2555-02-16 00:00:00', 'Acer Travel Mate 230', 'A001', null, 'ชั้น 1', null, '03', '002', 'ACER', 'cpu celeron 2.4GHz', 'Travel Mate 230', null, null, '2546-09-29 00:00:00', null, null, '2546-09-29 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('50', '7440-002-0001-013', '2546', '2555-02-16 00:00:00', 'Printer', 'G001', null, 'ชั้น 1 (OPD)', null, '03', '005', 'Epson', null, 'LQ 300', null, '9600.00', '2546-10-03 00:00:00', null, '65/3210', '2546-10-03 00:00:00', null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('51', '7440-002-0001-014', '2546', '2555-02-16 00:00:00', 'Printer', 'ฺB001', null, 'ชั้น 1 (OPD)', 'stock', '03', '005', 'Epson', null, 'LQ 300', null, '9600.00', '2546-10-03 00:00:00', null, '65/3210', '2546-10-03 00:00:00', null, null, null, '7');
+INSERT INTO `asset_master` VALUES ('51', '7440-002-0001-014', '2546', '2555-02-16 00:00:00', 'Printer', 'B001', null, 'ชั้น 1 (OPD)', 'stock', '03', '005', 'Epson', null, 'LQ 300', null, '9600.00', '2546-10-03 00:00:00', null, '65/3210', '2546-10-03 00:00:00', null, null, null, '7');
 INSERT INTO `asset_master` VALUES ('52', '7440-002-0002-001', '2546', '2555-02-16 00:00:00', 'Printer', 'C001', null, 'ชั้น 1', null, '03', '005', 'HP', null, 'HP 1020', null, '4600.00', '2546-10-01 00:00:00', null, null, '2546-10-01 00:00:00', null, null, null, '1');
-INSERT INTO `asset_master` VALUES ('53', '7440-002-0002-002', '2546', '2555-02-16 00:00:00', 'Printer', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '005', 'HP', null, 'HP 1020', null, '4600.00', '2546-10-01 00:00:00', null, null, '2546-10-01 00:00:00', null, null, null, '1');
+INSERT INTO `asset_master` VALUES ('53', '7440-002-0002-002', '2546', '2555-02-16 00:00:00', 'Printer', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '005', 'HP', null, 'HP 1020', null, '4600.00', '2546-10-01 00:00:00', null, null, '2546-10-01 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('54', '7440-002-0002-003', '2546', '2555-02-16 00:00:00', 'Printer', 'A001', null, 'ชั้น 1', 'ยุทธศาสตร์', '03', '005', 'HP', null, 'HP Laser 1150', null, null, '2546-09-29 00:00:00', null, null, '2546-09-29 00:00:00', null, 'งบประมาณงานเอสด์ สสจ.ชม.', null, '3');
 INSERT INTO `asset_master` VALUES ('55', '7440-002-0003-001', '2546', '2555-02-16 00:00:00', 'Printer Ink Jet', 'F010', null, 'ชั้น 1 (OPD)', null, '03', '005', 'Lexmark', null, 'LMZ 645', null, '1150.00', '2546-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('56', '7440-002-0003-003', '2546', '2555-02-16 00:00:00', 'Printer Ink Jet', 'F006', null, 'ชั้น 1 (OPD)', 'OPD', '03', '005', 'Canon', null, 'BJS S100', null, '2570.00', '2546-04-09 00:00:00', null, 'IV04-0283', null, null, null, null, '1');
@@ -219,27 +219,27 @@ INSERT INTO `asset_master` VALUES ('68', '7440-002-0001-016', '2551', '2555-02-1
 INSERT INTO `asset_master` VALUES ('69', '7440-002-0002-007', '2551', '2555-02-16 00:00:00', 'Printer Laser Jet', 'F003', null, 'ชั้น 1 (OPD)', 'ER', '03', '005', 'HP', null, 'HP Laser Jet 1020', null, '4600.00', '2551-03-19 00:00:00', null, null, '2551-03-19 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('70', '7440-005-0001-001', '2537', '2555-02-16 00:00:00', 'UPS Green', 'F006', null, 'ชั้น 1 (OPD)', 'ห้องตรวจ 1', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('71', '7440-005-0001-002', '2537', '2555-02-16 00:00:00', 'UPS Green', 'F006', null, 'ชั้น 1 (OPD)', 'ห้องตรวจ 2', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, 'Socomec?', null, '3');
-INSERT INTO `asset_master` VALUES ('72', '7440-005-0001-003', '2537', '2555-02-16 00:00:00', 'UPS Green', 'ฺB001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, 'สำรอง Switch Hup', null, '1');
+INSERT INTO `asset_master` VALUES ('72', '7440-005-0001-003', '2537', '2555-02-16 00:00:00', 'UPS Green', 'B001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, 'สำรอง Switch Hup', null, '1');
 INSERT INTO `asset_master` VALUES ('73', '7440-005-0001-004', '2537', '2555-02-16 00:00:00', 'UPS Power', 'L001', null, 'ชั้น 1 (OPD)', 'Lab', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('74', '7440-005-0001-005', '2537', '2555-02-16 00:00:00', 'UPS Loonic', 'L001', null, 'ชั้น 1 (OPD)', 'Lab', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('75', '7440-005-0001-006', '2537', '2555-02-16 00:00:00', 'UPS HLC', 'L001', null, 'ชั้น 1 (OPD)', 'Lab', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('76', '7440-005-0001-007', '2537', '2555-02-16 00:00:00', 'UPS Syndome', 'L001', null, 'ชั้น 1 (OPD)', 'Lab', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '1');
-INSERT INTO `asset_master` VALUES ('77', '7440-005-0001-008', '2537', '2555-02-16 00:00:00', 'UPS Green', 'ฺB001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('78', '7440-005-0001-009', '2537', '2555-02-16 00:00:00', 'UPS 40X max', 'ฺB001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '3');
+INSERT INTO `asset_master` VALUES ('77', '7440-005-0001-008', '2537', '2555-02-16 00:00:00', 'UPS Green', 'B001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '3');
+INSERT INTO `asset_master` VALUES ('78', '7440-005-0001-009', '2537', '2555-02-16 00:00:00', 'UPS 40X max', 'B001', null, 'ชั้น 1 (OPD)', 'ห้องบัตร', '03', '007', null, null, null, null, null, '2537-10-01 00:00:00', null, null, null, null, null, null, '3');
 INSERT INTO `asset_master` VALUES ('79', '7440-005-0001-010', '2539', '2555-02-16 00:00:00', 'UPS ', 'E000', null, 'ชั้น 2 (บริหาร)', null, '03', '007', null, null, null, null, '3300.00', '2539-04-25 00:00:00', null, '1/95', '2539-04-25 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('80', '7440-005-0001-011', '2541', '2555-02-16 00:00:00', 'UPS ', 'F003', null, 'ชั้น 1 (OPD)', 'ER', '03', '007', null, null, null, null, '3300.00', '2541-10-01 00:00:00', null, null, null, null, null, null, '3');
 INSERT INTO `asset_master` VALUES ('81', '7440-005-0001-012', '2541', '2555-02-16 00:00:00', 'UPS ', 'G001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '5500.00', '2541-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('82', '7440-005-0001-013', '2542', '2555-02-16 00:00:00', 'UPS 500 VA', 'F001', null, 'ชั้น 2 (ผู้ป่วย ช)', null, '03', '007', null, null, null, null, '3300.00', '2542-06-11 00:00:00', null, '01/0038', '2542-06-11 00:00:00', null, null, null, '1');
-INSERT INTO `asset_master` VALUES ('83', '7440-005-0001-014', '2542', '2555-02-16 00:00:00', 'UPS', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '3300.00', '2542-08-04 00:00:00', null, '05/0246', '2542-08-04 00:00:00', null, null, null, '3');
+INSERT INTO `asset_master` VALUES ('83', '7440-005-0001-014', '2542', '2555-02-16 00:00:00', 'UPS', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '3300.00', '2542-08-04 00:00:00', null, '05/0246', '2542-08-04 00:00:00', null, null, null, '3');
 INSERT INTO `asset_master` VALUES ('84', '7440-005-0001-015', '2542', '2555-02-16 00:00:00', 'UPS 500 VA', 'E001', null, 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '03', '007', null, null, null, null, '3500.00', '2542-10-01 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('85', '7440-005-0001-016', '2542', '2555-02-16 00:00:00', 'UPS', 'C001', null, 'ชั้น 1', null, '03', '007', null, null, null, null, '3300.00', '2542-10-23 00:00:00', null, '11/0504', '2542-10-23 00:00:00', null, null, null, '3');
 INSERT INTO `asset_master` VALUES ('86', '7440-005-0001-017', '2542', '2555-02-16 00:00:00', 'UPS', 'F005', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '3400.00', '2542-10-23 00:00:00', null, '11/0504', '2542-10-23 00:00:00', null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('87', '7440-005-0001-018', '2542', '2555-02-16 00:00:00', 'UPS', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '4500.00', '2542-10-01 00:00:00', null, null, null, null, null, null, '3');
+INSERT INTO `asset_master` VALUES ('87', '7440-005-0001-018', '2542', '2555-02-16 00:00:00', 'UPS', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '4500.00', '2542-10-01 00:00:00', null, null, null, null, null, null, '3');
 INSERT INTO `asset_master` VALUES ('88', '7440-005-0001-019', '2542', '2555-02-16 00:00:00', 'UPS', 'E001', null, 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '03', '007', null, null, null, null, '3300.00', '2542-10-01 00:00:00', null, null, null, null, null, null, '3');
 INSERT INTO `asset_master` VALUES ('89', '7440-005-0001-020', '2545', '2555-02-16 00:00:00', 'UPS APC 500 VA', 'C003', null, 'ชั้น 1', 'UC 1', '03', '007', null, null, null, null, '1400.00', '2545-07-12 00:00:00', null, 'IV07-0499', '2545-07-12 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('90', '7440-005-0001-021', '2546', '2555-02-16 00:00:00', 'UPS 600 VA', 'E001', null, 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '03', '007', null, null, null, null, '2600.00', '2546-03-27 00:00:00', null, '44/2177', '2546-03-27 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('91', '7440-005-0001-022', '2546', '2555-02-16 00:00:00', 'UPS 600 VA Power Gard', 'G001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '2600.00', '2546-04-25 00:00:00', null, '59/2943', '2546-04-25 00:00:00', null, null, null, '3');
-INSERT INTO `asset_master` VALUES ('92', '7440-005-0001-023', '2546', '2555-02-16 00:00:00', 'UPS SLC MINI 600 VA', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '1580.00', '2546-08-31 00:00:00', null, '0631487389', '2546-08-31 00:00:00', null, null, null, '1');
+INSERT INTO `asset_master` VALUES ('92', '7440-005-0001-023', '2546', '2555-02-16 00:00:00', 'UPS SLC MINI 600 VA', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '1580.00', '2546-08-31 00:00:00', null, '0631487389', '2546-08-31 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('93', '7440-005-0001-024', '2547', '2555-02-16 00:00:00', 'UPS 600 VA Power Gard', 'E001', null, 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '03', '007', null, null, null, null, '2500.00', '2547-05-20 00:00:00', null, '070/3456', '2547-05-20 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('94', '7440-005-0001-025', '2547', '2555-02-16 00:00:00', 'UPS Powergard PE', 'E000', null, 'ชั้น 2 (บริหาร)', null, '03', '007', null, null, null, null, '1900.00', '2547-10-21 00:00:00', null, 'L8-J9-17580', '2547-10-21 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('95', '7440-005-0001-026', '2547', '2555-02-16 00:00:00', 'UPS NUBOS S100 P3', 'E000', null, 'ชั้น 2 (บริหาร)', 'ตู้สาขาโทรศัพท์', '03', '007', null, null, null, null, '1890.00', '2547-12-07 00:00:00', null, '6035', '2547-12-07 00:00:00', null, null, null, '1');
@@ -252,7 +252,7 @@ INSERT INTO `asset_master` VALUES ('101', '7440-005-0001-032', '2549', '2555-02-
 INSERT INTO `asset_master` VALUES ('102', '7440-005-0001-033', '2549', '2555-02-16 00:00:00', 'UPS APC BR 1000 I', 'C002', null, 'ชั้น 1', null, '03', '007', null, null, null, null, '8560.00', '2549-06-16 00:00:00', null, null, null, null, 'Projector', null, '1');
 INSERT INTO `asset_master` VALUES ('103', '7440-005-0001-034', '2551', '2555-02-16 00:00:00', 'UPS Syndome S5', 'F003', null, 'ชั้น 1 (OPD)', 'ER', '03', '007', null, null, null, null, '1700.00', '2551-03-19 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('104', '7440-005-0001-035', '2551', '2555-02-16 00:00:00', 'UPS 4Tech 600 VA', 'K001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '1600.00', '2551-05-12 00:00:00', null, null, null, null, null, null, '1');
-INSERT INTO `asset_master` VALUES ('105', '7440-005-0001-036', '2551', '2555-02-16 00:00:00', 'UPS Syndome S9-80 VA', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '1999.00', '2551-05-18 00:00:00', null, null, null, null, null, null, '1');
+INSERT INTO `asset_master` VALUES ('105', '7440-005-0001-036', '2551', '2555-02-16 00:00:00', 'UPS Syndome S9-80 VA', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, null, null, null, '1999.00', '2551-05-18 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('106', '7440-005-0001-037', '2551', '2555-02-16 00:00:00', 'UPS Apple 850 VA', 'F006', null, 'ชั้น 1 (OPD)', 'OPD', '03', '007', null, null, null, null, '1850.00', '2551-06-05 00:00:00', null, null, null, null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('107', '7440-005-0001-038', '2551', '2555-02-16 00:00:00', 'UPS FIT', 'A001', null, 'ชั้น 1', null, '03', '007', null, '850 VA, สำรองไฟได้ไม่น้อยกว่า 15 นาที', null, null, '1600.00', '2551-06-18 00:00:00', null, '0329/07', '2551-06-18 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('108', '7440-005-0001-039', '2551', '2555-02-16 00:00:00', 'UPS FIT', 'G001', null, 'ชั้น 1 (OPD)', null, '03', '007', null, '850 VA, สำรองไฟได้ไม่น้อยกว่า 15 นาที', null, null, '1600.00', '2551-06-18 00:00:00', null, '0329/07', '2551-06-18 00:00:00', null, null, null, '1');
@@ -273,7 +273,7 @@ INSERT INTO `asset_master` VALUES ('122', '7440-001-0001-037', '2549', '2555-02-
 INSERT INTO `asset_master` VALUES ('123', '7440-001-0001-038', '2549', '2555-02-16 00:00:00', 'คอมพิวเตอร์ CHICHANG', 'F001', null, 'ชั้น 2 (ผู้ป่วย ช)', null, '03', '001', null, 'CPU Pentium 4 3.0 GHz.(630)', null, null, '16635.51', '2549-06-01 00:00:00', null, 'IS06-0001', '2549-06-01 00:00:00', null, 'จอเสีย', null, '7');
 INSERT INTO `asset_master` VALUES ('124', '7440-001-0001-039', '2549', '2555-02-16 00:00:00', 'คอมพิวเตอร์ CHICHANG', 'E001', null, 'ชั้น 2 (บริหาร)', null, '03', '001', null, 'CPU Pentium 4 3.0 GHz.(630)', null, null, '16635.51', '2549-06-16 00:00:00', null, 'IS06-0035', '2549-06-16 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('125', '7440-001-0001-040', '2549', '2555-02-16 00:00:00', 'คอมพิวเตอร์ View', 'D001', null, 'ชั้น 1 (ห้องฟัน)', null, '03', '001', null, 'CPU Pentium 4 3.06 GHz.', null, null, '20749.44', '2549-07-29 00:00:00', null, null, '2549-07-29 00:00:00', null, null, null, '1');
-INSERT INTO `asset_master` VALUES ('126', '7440-001-0001-041', '2549', '2555-02-16 00:00:00', 'คอมพิวเตอร์ CHICHANG', 'ฺB001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, 'CPU Pentium DS20 2.8 GHz.', null, null, '12742.99', '2549-08-17 00:00:00', null, 'IS09-0016', '2549-08-17 00:00:00', null, null, null, '1');
+INSERT INTO `asset_master` VALUES ('126', '7440-001-0001-041', '2549', '2555-02-16 00:00:00', 'คอมพิวเตอร์ CHICHANG', 'B001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, 'CPU Pentium DS20 2.8 GHz.', null, null, '12742.99', '2549-08-17 00:00:00', null, 'IS09-0016', '2549-08-17 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('127', '7440-001-0001-042', '2551', '2555-02-16 00:00:00', 'คอมพิวเตอร์ PCCOM', 'E001', null, 'ชั้น 1 (OPD)', 'ห้องเก็บเงิน', '03', '001', null, 'CPU Pentium 4 3.0 GHz.(631)', null, null, '5780.00', '2551-05-12 00:00:00', null, '0307/07', '2551-05-12 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('128', '7440-001-0001-043', '2551', '2555-02-16 00:00:00', 'คอมพิวเตอร์ PCCOM', 'K001', null, 'ชั้น 1 (OPD)', null, '03', '001', null, 'CPU Pentium 4 3.0 GHz.(631)', null, null, '16000.00', '2551-05-12 00:00:00', null, '0308/07', '2551-05-12 00:00:00', null, null, null, '1');
 INSERT INTO `asset_master` VALUES ('129', '7440-001-0001-044', '2551', '2555-02-16 00:00:00', 'คอมพิวเตอร์ PCCOM', 'A001', null, 'ชั้น 1', null, '03', '001', null, 'CPU Pentium 4 3.0 GHz.(637)', null, null, '23500.00', '2551-06-18 00:00:00', null, '0329/07', '2551-06-18 00:00:00', null, null, null, '1');
@@ -297,9 +297,21 @@ CREATE TABLE `auth_assignment` (
 -- ----------------------------
 -- Records of auth_assignment
 -- ----------------------------
-INSERT INTO `auth_assignment` VALUES ('Admin', '1', '1528719147');
+INSERT INTO `auth_assignment` VALUES ('Admin', '1', '1528720165');
 INSERT INTO `auth_assignment` VALUES ('Administrator', '1', '1503026097');
-INSERT INTO `auth_assignment` VALUES ('User', '2', '1528721990');
+INSERT INTO `auth_assignment` VALUES ('Administrator', '3', '1524208524');
+INSERT INTO `auth_assignment` VALUES ('Asset', '5', '1528730479');
+INSERT INTO `auth_assignment` VALUES ('Asset', '9', '1529532638');
+INSERT INTO `auth_assignment` VALUES ('Store', '4', '1528730468');
+INSERT INTO `auth_assignment` VALUES ('Store', '8', '1529532582');
+INSERT INTO `auth_assignment` VALUES ('User', '2', '1528720177');
+INSERT INTO `auth_assignment` VALUES ('User', '3', '1528722334');
+INSERT INTO `auth_assignment` VALUES ('User', '4', '1528723396');
+INSERT INTO `auth_assignment` VALUES ('User', '5', '1528723417');
+INSERT INTO `auth_assignment` VALUES ('User', '6', '1528723427');
+INSERT INTO `auth_assignment` VALUES ('User', '7', '1528723439');
+INSERT INTO `auth_assignment` VALUES ('User', '8', '1529532962');
+INSERT INTO `auth_assignment` VALUES ('User', '9', '1529532941');
 
 -- ----------------------------
 -- Table structure for auth_item
@@ -322,191 +334,241 @@ CREATE TABLE `auth_item` (
 -- ----------------------------
 -- Records of auth_item
 -- ----------------------------
-INSERT INTO `auth_item` VALUES ('/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/admin/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/assignment/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/assignment/assign', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/assignment/index', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/assignment/revoke', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/assignment/view', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/default/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/default/index', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/menu/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/menu/create', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/menu/delete', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/menu/index', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/menu/update', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/menu/view', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/permission/assign', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/create', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/delete', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/index', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/remove', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/update', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/permission/view', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/admin/role/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/assign', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/create', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/delete', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/index', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/remove', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/update', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/role/view', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/route/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/route/assign', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/route/create', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/route/index', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/route/refresh', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/route/remove', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/rule/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/rule/create', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/rule/delete', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/rule/index', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/rule/update', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/rule/view', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/activate', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/change-password', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/delete', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/index', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/login', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/logout', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/request-password-reset', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/reset-password', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/signup', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/admin/user/view', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/card/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/card/create', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/card/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/card/report', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/catagory/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/catagory/lists', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/computer/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/computer/create', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/computer/delete', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/computer/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/computer/update', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/computer/view', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/depart/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/depart/create', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/depart/delete', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/depart/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/depart/update', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/depart/view', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/gii/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/gii/default/*', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/gii/default/action', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/gii/default/diff', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/gii/default/index', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/gii/default/preview', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/gii/default/view', '2', null, null, null, '1528718873', '1528718873');
-INSERT INTO `auth_item` VALUES ('/items/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/items/create', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/items/delete', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/items/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/items/update', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/items/view', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/medical/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/medical/create', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/medical/delete', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/medical/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/medical/update', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/medical/view', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/member/*', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/member/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/member/profile', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/menus/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/menus/create', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/menus/delete', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/menus/index', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/menus/update', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/menus/view', '2', null, null, null, '1528718874', '1528718874');
-INSERT INTO `auth_item` VALUES ('/office/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/office/create', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/office/delete', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/office/index', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/office/update', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/office/view', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/rbac/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/assignment/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/rbac/assignment/assign', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/rbac/permission/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/permission/create', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/rbac/permission/delete', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/permission/index', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/rbac/permission/update', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/role/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/role/create', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/role/delete', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/role/index', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/role/update', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/rule/*', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/rule/create', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/rule/delete', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/rule/index', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/rule/search', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/rbac/rule/update', '2', null, null, null, '1528718872', '1528718872');
-INSERT INTO `auth_item` VALUES ('/report/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/report/index', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/runquery/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/runquery/error', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/runquery/index', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/runquery/result', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/setting/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/setting/index', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/about', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/captcha', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/contact', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/error', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/index', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/login', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/site/logout', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/submenu/*', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/submenu/create', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/submenu/delete', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/submenu/index', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/submenu/update', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/submenu/view', '2', null, null, null, '1528718875', '1528718875');
-INSERT INTO `auth_item` VALUES ('/user/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/admin/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/admin/assignments', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/block', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/admin/confirm', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/create', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/delete', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/admin/index', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/info', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/resend-password', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/admin/switch', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/update', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/admin/update-profile', '2', null, null, null, '1528718870', '1528718870');
-INSERT INTO `auth_item` VALUES ('/user/profile/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/profile/index', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/profile/show', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/recovery/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/recovery/request', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/recovery/reset', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/registration/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/registration/confirm', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/registration/connect', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/registration/register', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/registration/resend', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/security/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/security/auth', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/security/login', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/security/logout', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/*', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/account', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/confirm', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/delete', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/disconnect', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/networks', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('/user/settings/profile', '2', null, null, null, '1528718871', '1528718871');
-INSERT INTO `auth_item` VALUES ('Admin', '2', 'ผู้ดูแลระบบ', null, null, '1528718980', '1528718980');
+INSERT INTO `auth_item` VALUES ('/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/assignment/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/assignment/assign', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/assignment/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/assignment/revoke', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/assignment/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/default/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/default/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/menu/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/menu/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/menu/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/menu/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/menu/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/menu/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/assign', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/remove', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/permission/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/assign', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/remove', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/role/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/route/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/route/assign', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/route/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/route/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/route/refresh', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/route/remove', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/rule/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/rule/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/rule/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/rule/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/rule/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/rule/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/activate', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/change-password', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/login', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/logout', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/request-password-reset', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/reset-password', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/signup', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/admin/user/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/advertising/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/advertising/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/advertising/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/advertising/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/advertising/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/advertising/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/agriculture/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/agriculture/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/agriculture/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/agriculture/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/agriculture/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/agriculture/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/card/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/card/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/card/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/card/report', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/catagory/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/catagory/lists', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/computer/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/computer/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/computer/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/computer/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/computer/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/computer/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/construction/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/construction/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/construction/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/construction/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/construction/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/construction/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/depart/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/depart/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/depart/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/depart/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/depart/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/depart/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/education/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/education/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/education/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/education/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/education/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/education/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/electronic/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/electronic/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/electronic/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/electronic/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/electronic/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/electronic/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/factory/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/factory/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/factory/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/factory/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/factory/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/factory/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/gii/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/gii/default/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/gii/default/action', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/gii/default/diff', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/gii/default/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/gii/default/preview', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/gii/default/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/house/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/house/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/house/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/house/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/house/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/house/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/items/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/items/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/items/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/items/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/items/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/items/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/medical/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/medical/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/medical/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/medical/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/medical/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/medical/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/member/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/member/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/member/profile', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/menus/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/menus/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/menus/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/menus/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/menus/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/menus/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/office/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/office/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/office/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/office/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/office/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/office/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/assign', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/permission/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/permission/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/permission/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/permission/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/permission/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/role/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/role/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/role/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/role/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/role/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/rule/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/rule/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/rule/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/rule/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/rule/search', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/rbac/rule/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/report/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/report/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/runquery/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/runquery/error', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/runquery/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/runquery/result', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/setting/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/setting/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/about', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/captcha', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/contact', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/error', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/login', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/site/logout', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/submenu/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/submenu/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/submenu/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/submenu/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/submenu/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/submenu/view', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/assignments', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/block', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/confirm', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/create', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/info', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/resend-password', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/switch', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/update', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/admin/update-profile', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/profile/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/profile/index', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/profile/show', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/recovery/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/recovery/request', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/recovery/reset', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/registration/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/registration/confirm', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/registration/connect', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/registration/register', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/registration/resend', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/security/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/security/auth', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/security/login', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/security/logout', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/*', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/account', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/confirm', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/delete', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/disconnect', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/networks', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/user/settings/profile', '2', null, null, null, '1528720030', '1528720030');
+INSERT INTO `auth_item` VALUES ('/vehicle/*', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/vehicle/create', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/vehicle/delete', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/vehicle/index', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/vehicle/update', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('/vehicle/view', '2', null, null, null, '1529533282', '1529533282');
+INSERT INTO `auth_item` VALUES ('Admin', '2', 'ผู้ดูแลระบบ', null, null, '1528720065', '1528720065');
 INSERT INTO `auth_item` VALUES ('Administrator', '1', 'ผู้ดูแลระบบ', null, null, '1503025077', '1503025077');
-INSERT INTO `auth_item` VALUES ('User', '2', 'สำหรับ User ทั่วไป', null, null, '1528719082', '1528719082');
+INSERT INTO `auth_item` VALUES ('Asset', '2', 'สำหรับผู้ใช้ในงานครุภัณฑ์', null, null, '1528730284', '1528730284');
+INSERT INTO `auth_item` VALUES ('Store', '2', 'สำหรับผู้ใช้งานคลังวัสดุ', null, null, '1528730410', '1528730410');
+INSERT INTO `auth_item` VALUES ('User', '2', 'สำหรับผู้ใช้ทั่วไป', null, null, '1528720104', '1528720104');
 
 -- ----------------------------
 -- Table structure for auth_item_child
@@ -525,6 +587,10 @@ CREATE TABLE `auth_item_child` (
 -- Records of auth_item_child
 -- ----------------------------
 INSERT INTO `auth_item_child` VALUES ('Admin', '/*');
+INSERT INTO `auth_item_child` VALUES ('Asset', '/computer/*');
+INSERT INTO `auth_item_child` VALUES ('Asset', '/medical/*');
+INSERT INTO `auth_item_child` VALUES ('Asset', '/office/*');
+INSERT INTO `auth_item_child` VALUES ('Store', '/items/*');
 INSERT INTO `auth_item_child` VALUES ('User', '/site/*');
 INSERT INTO `auth_item_child` VALUES ('User', '/user/security/*');
 INSERT INTO `auth_item_child` VALUES ('User', '/user/settings/account');
@@ -582,6 +648,41 @@ CREATE TABLE `depart` (
 -- ----------------------------
 -- Records of depart
 -- ----------------------------
+INSERT INTO `depart` VALUES ('1', 'การเงิน/บัญชี');
+INSERT INTO `depart` VALUES ('2', 'ธุรการ');
+INSERT INTO `depart` VALUES ('3', 'พัสดุ');
+INSERT INTO `depart` VALUES ('4', 'ซ่อมบำรุง');
+INSERT INTO `depart` VALUES ('5', 'ประปา');
+INSERT INTO `depart` VALUES ('6', 'บำบัด');
+INSERT INTO `depart` VALUES ('7', 'ภาคสนามและสวน');
+INSERT INTO `depart` VALUES ('8', 'ศูนย์ยาน');
+INSERT INTO `depart` VALUES ('9', 'ผู้ป่วยในชาย');
+INSERT INTO `depart` VALUES ('10', 'ผู้ป่วยในหญิง');
+INSERT INTO `depart` VALUES ('11', 'อุบัติเหตุและฉุกเฉิน');
+INSERT INTO `depart` VALUES ('12', 'ห้องผ่าตัด');
+INSERT INTO `depart` VALUES ('13', 'ห้องคลอด');
+INSERT INTO `depart` VALUES ('14', 'ผู้ป่วยนอก');
+INSERT INTO `depart` VALUES ('15', 'จ่ายกลาง');
+INSERT INTO `depart` VALUES ('16', 'NCD');
+INSERT INTO `depart` VALUES ('17', 'ห้องยานอก');
+INSERT INTO `depart` VALUES ('18', 'ห้องยาใน');
+INSERT INTO `depart` VALUES ('19', 'คลังยา');
+INSERT INTO `depart` VALUES ('20', 'แพทย์แผนไทย');
+INSERT INTO `depart` VALUES ('21', 'โรงซักฟอก');
+INSERT INTO `depart` VALUES ('22', 'ทันตกรรม');
+INSERT INTO `depart` VALUES ('23', 'ยุทธศาสตร์');
+INSERT INTO `depart` VALUES ('24', 'เทคโนโลยีสารสนเทศ');
+INSERT INTO `depart` VALUES ('25', 'ห้องบัตร');
+INSERT INTO `depart` VALUES ('26', 'งานเวชศาสตร์ชุมชนฯ');
+INSERT INTO `depart` VALUES ('27', 'PCU เวียง');
+INSERT INTO `depart` VALUES ('28', 'งานประกันสุขภาพ');
+INSERT INTO `depart` VALUES ('29', 'กายภาพบำำบัด');
+INSERT INTO `depart` VALUES ('30', 'X-ray');
+INSERT INTO `depart` VALUES ('31', 'ชันสูตร LAB');
+INSERT INTO `depart` VALUES ('32', 'บริหารทั่วไป');
+INSERT INTO `depart` VALUES ('33', 'งานสุขภาพจิตและยาเสพติด');
+INSERT INTO `depart` VALUES ('34', 'วัสดุการแพทย์');
+INSERT INTO `depart` VALUES ('35', 'กลุ่มการฯ');
 
 -- ----------------------------
 -- Table structure for group
@@ -613,6 +714,9 @@ CREATE TABLE `items` (
 -- ----------------------------
 -- Records of items
 -- ----------------------------
+INSERT INTO `items` VALUES ('1', '1', 'ปากกาน้ำเงิน', '20', '1');
+INSERT INTO `items` VALUES ('2', '2', 'ปากกาแดง', '20', '2');
+INSERT INTO `items` VALUES ('3', '3', 'ปากกาดำ', '20', '3');
 
 -- ----------------------------
 -- Table structure for menus
@@ -628,19 +732,20 @@ CREATE TABLE `menus` (
   `sort` int(11) DEFAULT NULL,
   `visible` tinyint(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of menus
 -- ----------------------------
 INSERT INTO `menus` VALUES ('1', 'home', 'index.php?r=site/index', 'หน้าแรก', 'หน้าแรก', null, '1', null);
-INSERT INTO `menus` VALUES ('2', 'th-list', null, 'รายการครุภัณฑ์', 'ครุภัณฑ์ทั้งหมด', null, '2', null);
-INSERT INTO `menus` VALUES ('3', 'list-ul', null, 'รายการวัสดุ', 'วัสดุทั้งหมด', null, '3', null);
+INSERT INTO `menus` VALUES ('2', 'th-list', null, 'จัดการครุภัณฑ์', 'ครุภัณฑ์ทั้งหมด', null, '2', null);
+INSERT INTO `menus` VALUES ('3', 'list-ul', null, 'จัดการคลังวัสดุ', 'วัสดุทั้งหมด', null, '3', null);
 INSERT INTO `menus` VALUES ('4', 'edit', 'index.php?r=card/index', 'ใบส่งซ่อม', 'เขียนใบส่งซ่อม', null, '4', null);
 INSERT INTO `menus` VALUES ('5', 'list', 'index.php?r=card/report', 'รายการส่งซ่อม', null, null, '5', null);
-INSERT INTO `menus` VALUES ('6', 'users', 'index.php?r=member/index', 'สมาชิก', null, null, '6', null);
+INSERT INTO `menus` VALUES ('6', 'users', 'index.php?r=member/index', 'สมาชิก', null, null, '6', '0');
 INSERT INTO `menus` VALUES ('7', 'pie-chart', null, 'รายงาน', null, null, '7', null);
 INSERT INTO `menus` VALUES ('8', 'gear', 'index.php?r=setting/index', 'ตั้งค่าระบบ', null, null, '8', null);
+INSERT INTO `menus` VALUES ('9', 'dollar', null, 'จัดการการจัดซื้อ', '', '', '1', null);
 
 -- ----------------------------
 -- Table structure for migration
@@ -771,7 +876,14 @@ CREATE TABLE `profile` (
 -- Records of profile
 -- ----------------------------
 INSERT INTO `profile` VALUES ('1', 'Tharaphong Chamnan', 'admphrao@gmail.com', 'admphrao@gmail.com', '286bb55023af0b4d5716542fc3e74213', '', '', '', 'Asia/Bangkok');
-INSERT INTO `profile` VALUES ('2', null, null, null, null, null, null, null, null);
+INSERT INTO `profile` VALUES ('2', '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', 'Asia/Bangkok');
+INSERT INTO `profile` VALUES ('3', '', '', 'admphrao@gmail.com', '286bb55023af0b4d5716542fc3e74213', '', '', '', 'Asia/Bangkok');
+INSERT INTO `profile` VALUES ('4', null, null, null, null, null, null, null, null);
+INSERT INTO `profile` VALUES ('5', null, null, null, null, null, null, null, null);
+INSERT INTO `profile` VALUES ('6', null, null, null, null, null, null, null, null);
+INSERT INTO `profile` VALUES ('7', null, null, null, null, null, null, null, null);
+INSERT INTO `profile` VALUES ('8', 'จัดการ วัสดุคงคลัง', '', '', 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', 'Asia/Bangkok');
+INSERT INTO `profile` VALUES ('9', 'จัดการ ครุภัณฑ์', '', '', 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', 'Asia/Bangkok');
 
 -- ----------------------------
 -- Table structure for receivable
@@ -862,11 +974,18 @@ CREATE TABLE `session` (
 -- ----------------------------
 -- Records of session
 -- ----------------------------
-INSERT INTO `session` VALUES ('6fa7sc2lhhdrq8rjtee6piahi6', '1524093343', 0x5F5F666C6173687C613A303A7B7D, null);
-INSERT INTO `session` VALUES ('ae14tjkt58k75sddpdpf17php5', '1514292505', 0x5F5F666C6173687C613A303A7B7D, null);
-INSERT INTO `session` VALUES ('bvhvf3lnjggg604sbsg5a3i582', '1525769290', 0x5F5F666C6173687C613A303A7B7D, null);
-INSERT INTO `session` VALUES ('k7db6cl3vsmh0vji1t0af362r7', '1528725256', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A33383A222F77617265686F7573652F7765622F696E6465782E7068703F723D636172642F7265706F7274223B, null);
-INSERT INTO `session` VALUES ('siphf7aiu13lq0r687pok1an71', '1526004669', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A34303A222F77617265686F7573652F7765622F696E6465782E7068703F723D73657474696E672F696E646578223B, null);
+INSERT INTO `session` VALUES ('1o7o37skqmj8gcra0hmbj8oo43', '1529552395', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A33373A222F77617265686F7573652F7765622F696E6465782E7068703F723D636172642F696E646578223B, null);
+INSERT INTO `session` VALUES ('58i3drk04f0nne8hc33q96c0j4', '1529536755', 0x5F5F666C6173687C613A303A7B7D, null);
+INSERT INTO `session` VALUES ('8tl5b1q15c9s6tk30jo1389gv0', '1529550515', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A34313A222F77617265686F7573652F7765622F696E6465782E7068703F723D636F6D70757465722F696E646578223B5F5F69647C693A393B, '9');
+INSERT INTO `session` VALUES ('air32lt468tk5jnbhl6um7k8i0', '1529546870', 0x5F5F666C6173687C613A303A7B7D, null);
+INSERT INTO `session` VALUES ('dpac29ksh8c13d1pq68sre4q41', '1529549404', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A34303A222F77617265686F7573652F7765622F696E6465782E7068703F723D6D65646963616C2F696E646578223B5F5F69647C693A393B, '9');
+INSERT INTO `session` VALUES ('hqrh4qobtrlq25edo64m5sn2p7', '1529748432', 0x5F5F666C6173687C613A303A7B7D5F5F69647C693A313B, '1');
+INSERT INTO `session` VALUES ('i51ahsqfjde76li0q048dls2n5', '1529554000', 0x5F5F666C6173687C613A303A7B7D, null);
+INSERT INTO `session` VALUES ('kp54rq0i8ks62jdu7one8f2v92', '1529629141', 0x5F5F666C6173687C613A303A7B7D5F5F69647C693A313B, '1');
+INSERT INTO `session` VALUES ('lmn4ju44i3o7hn8gao99enj8t6', '1529553865', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A34303A222F77617265686F7573652F7765622F696E6465782E7068703F723D6D65646963616C2F696E646578223B, null);
+INSERT INTO `session` VALUES ('lujof4ceihmd034ij8mncskv22', '1529572677', 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A33333A222F77617265686F7573652F7765622F696E6465782E7068703F723D7265706F7274223B5F5F69647C693A363B, '6');
+INSERT INTO `session` VALUES ('oaf9s0sanri2t1ncntja4o59r4', '1529573955', 0x5F5F666C6173687C613A303A7B7D5F5F69647C693A313B616374696F6E732D72656469726563747C733A33393A222F77617265686F7573652F7765622F696E6465782E7068703F723D7573657225324661646D696E223B, '1');
+INSERT INTO `session` VALUES ('s64paupobe703bdfhbco0hkik4', '1529550028', 0x5F5F666C6173687C613A303A7B7D, null);
 
 -- ----------------------------
 -- Table structure for social_account
@@ -941,10 +1060,22 @@ CREATE TABLE `sub_menu` (
 -- ----------------------------
 -- Records of sub_menu
 -- ----------------------------
-INSERT INTO `sub_menu` VALUES ('2', 'desktop', 'index.php?r=computer/index', 'ครุภัณฑ์คอมพิวเตอร์', 'รายการครุภัณฑ์คอมพิวเตอร์', null, '1', null);
-INSERT INTO `sub_menu` VALUES ('2', 'th', 'index.php?r=report', 'ครุภัณฑ์...1', 'รายการครุภัณฑ์...', null, '2', null);
-INSERT INTO `sub_menu` VALUES ('7', 'pie-chart', 'index.php?r=report', 'รายงาน...1', 'รายการ...', null, '1', null);
-INSERT INTO `sub_menu` VALUES ('3', 'th', 'index.php?r=report', 'วัสดุ...1', 'รายการครุภัณฑ์...', null, '1', null);
+INSERT INTO `sub_menu` VALUES ('2', 'desktop', 'index.php?r=computer/index', 'ครุภัณฑ์คอมพิวเตอร์', 'รายการครุภัณฑ์คอมพิวเตอร์', null, '3', null);
+INSERT INTO `sub_menu` VALUES ('2', 'heartbeat', 'index.php?r=medical/index', 'ครุภัณฑ์การแพทย์', 'รายการครุภัณฑ์...', null, '1', null);
+INSERT INTO `sub_menu` VALUES ('7', 'pie-chart', 'index.php?r=report/report-store', 'รายงานคลังวัสดุ', 'รายการ...', null, '1', null);
+INSERT INTO `sub_menu` VALUES ('3', 'cubes', 'index.php?r=items', 'วัสดุคงคลัง', 'รายการครุภัณฑ์...', null, '1', null);
+INSERT INTO `sub_menu` VALUES ('2', 'archive', 'index.php?r=office/index', 'ครุภัณฑ์สำนักงาน', null, null, '2', null);
+INSERT INTO `sub_menu` VALUES ('2', 'microchip', 'index.php?r=electronic/index', 'ครุภัณฑ์ไฟฟ้าและวิทยุ', null, null, '4', null);
+INSERT INTO `sub_menu` VALUES ('2', 'film', 'index.php?r=advertising/index', 'ครุภัณฑ์โฆษณาและเผยแพร่', null, null, '5', null);
+INSERT INTO `sub_menu` VALUES ('2', 'gavel', 'index.php?r=construction/index', 'ครุภัณฑ์ก่อสร้าง', null, null, '6', null);
+INSERT INTO `sub_menu` VALUES ('2', 'leaf', 'index.php?r=agriculture/index', 'ครุภัณฑ์การเกษตร', null, null, '7', null);
+INSERT INTO `sub_menu` VALUES ('2', 'institution', 'index.php?r=house/index', 'ครุภัณฑ์งานบ้านงานครัว', null, null, '8', null);
+INSERT INTO `sub_menu` VALUES ('2', 'taxi', 'index.php?r=vehicle/index', 'ครุภัณฑ์ยานพาหนะ', null, null, '9', null);
+INSERT INTO `sub_menu` VALUES ('2', 'building', 'index.php?r=factory/index', 'ครุภัณฑ์โรงงาน', null, null, '10', null);
+INSERT INTO `sub_menu` VALUES ('2', 'graduation-cap', 'index.php?r=education/index', 'ครุภัณฑ์การศึกษา', null, null, '11', null);
+INSERT INTO `sub_menu` VALUES ('7', 'pie-chart', 'index.php?r=report/report-asset', 'รายงานครุภัณฑ์', 'รายการ...', null, '2', null);
+INSERT INTO `sub_menu` VALUES ('9', 'dollar', 'index.php?r=buyitems', 'จัดซื้อครุภัณฑ์', '', null, '1', null);
+INSERT INTO `sub_menu` VALUES ('9', 'dollar', 'index.php?r=buyitems', 'จัดซื้อวัสดุ', '', null, '1', null);
 
 -- ----------------------------
 -- Table structure for token
@@ -1015,13 +1146,20 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_unique_username` (`username`),
   UNIQUE KEY `user_unique_email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'admin', 'admphrao@gmail.com', '$2y$12$FH/tGRA1IKlsIIqBNZBY7O1GIz6u1JWTJ51FSkyXlu2EFV4WRBKDm', '_rWxFmXNGBiExucOIKMvo0mBZtp2qg_T', '1501355572', null, null, '::1', '1501353914', '1502437835', '0', '1528721141');
-INSERT INTO `user` VALUES ('2', 'user', 'user@local.com', '$2y$12$0QC8gKY/smPAibOcx98hxOHSSHi8xKHP9vbsLF.t05APnEZJjfpZu', 'T5JgifFNUqSqJVfvJ5SWItNtA_w-OFjt', '1501356352', null, null, '::1', '1501356353', '1501356353', '0', '1528722021');
+INSERT INTO `user` VALUES ('1', 'admin', 'admphrao@gmail.com', '$2y$12$YvFO5qoqpZcQ76HgxodJYuNHZGWmIlaZJXl6f80CJclDXg9GNUQZ2', '_rWxFmXNGBiExucOIKMvo0mBZtp2qg_T', '1501355572', null, null, '::1', '1501353914', '1527940705', '0', '1529744570');
+INSERT INTO `user` VALUES ('2', 'user', 'user@local.com', '$2y$12$0QC8gKY/smPAibOcx98hxOHSSHi8xKHP9vbsLF.t05APnEZJjfpZu', 'T5JgifFNUqSqJVfvJ5SWItNtA_w-OFjt', '1501356352', null, null, '::1', '1501356353', '1501356353', '0', '1528723477');
+INSERT INTO `user` VALUES ('3', 'tarapong', 'tharaphong.shutterj@gmail.com', '$2y$12$2t3xm8U5921w/VPPJCEApun2lISxAstzZDMK4oM9xrzWC73RPIxqG', 'uGx9zNXn7tn1Pg4Hor3dc-Mr2N2D7VsG', '1524105853', null, null, '61.7.185.88', '1524105853', '1524194877', '0', '1528722389');
+INSERT INTO `user` VALUES ('4', 'peawkaew', 'peawkaew@gmail.com', '$2y$12$IF3KvxsHyao48nlSD9OuOOIk9PzUBvS7dpKzbO7aMlVDCsl.CfWIO', 'GqZqKe1TBVdX7EJkifKhpPJ0zftt1z4y', '1524195311', null, null, '110.77.217.182', '1524195312', '1524195312', '0', '1527755874');
+INSERT INTO `user` VALUES ('5', 'gogo', 'gogomini79@gmail.com', '$2y$12$iSwAxtMyHLOUvLFKy.t9QuORO5aItUY7aa0V9BbzQlee1uDgH8W0e', '19HsJWM9pVuLEswHPNQPjaefh0hQqTX-', '1524469077', null, null, '1.2.184.170', '1524469078', '1524469078', '0', '1528701672');
+INSERT INTO `user` VALUES ('6', 'kissada', 'krsdad_213@hotmail.com', '$2y$12$E01BmfckxgX3wfC4HkVTwuYbShUTRnLvRj5MLmz19vXo2kUUMrVO2', 'ipQ8WwWI9wDbrJvw4-1ddoGHLfY3z1DC', '1524812414', null, null, '1.179.145.98', '1524812415', '1524812415', '0', '1529571217');
+INSERT INTO `user` VALUES ('7', 'krapong', 'natee.krapong@gmail.com', '$2y$12$nQBbvyRiCvcfNHFQ2AS2L.EZOMtHKK0BpqSLWF2Ms5uc8Osik/Z9W', 'b481ouvUzS-ZgnOCjMcnXqT6F5qM0ZB7', '1528469077', null, null, '118.172.113.18', '1528469077', '1528469077', '0', '1529545191');
+INSERT INTO `user` VALUES ('8', 'store', 'store@local.com', '$2y$12$FP8bqFck.GkuUC6/HKicPeGRlEFBI.wGv2PpKm1ou4g6U1Adzp8Ga', 'r0VUZb2hBlIwJ2zfdhXi4M5Bt63QUaBL', '1529532523', null, null, '1.179.245.56', '1529532523', '1529532523', '0', '1529535676');
+INSERT INTO `user` VALUES ('9', 'asset', 'asset@local.com', '$2y$12$VPOODvlBmPkXfuxZkeStAu04GkdAIBUijwnYw1uFtZrjSqXaKhWn6', 'uP2VVW4riTpsTJHSwBt4LeDXfvwTfhHG', '1529532613', null, null, '1.179.245.56', '1529532613', '1529532613', '0', '1529548897');
 
 -- ----------------------------
 -- Procedure structure for create_table_computer
