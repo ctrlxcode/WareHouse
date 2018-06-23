@@ -60,7 +60,7 @@ $asset_path = Yii::$app->assetManager->getPublishedUrl('@app/themes/repair/asset
                         </li>
                         <?php } ?>
                         <li class="divider"></li>
-                        <li><a href="<?= Url::to(['/user/security/logout'])?>" data-method="post"><i class="fa fa-sign-out fa-fw"></i> ออกจากระบบ</a>
+                        <li><a href="<?= Url::to(['/user/security/logout'])?>" data-method="post"><i class="glyphicon glyphicon-log-out"></i> ออกจากระบบ</a>
                         </li>
                     </ul>
             </div>
