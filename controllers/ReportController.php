@@ -9,4 +9,14 @@ class ReportController extends \yii\web\Controller
         return $this->render('index');
     }
 
+    public function actionReportStore()
+    {
+        return $this->render('report-store');
+    }
+
+    public function actionReportAsset()
+    {
+        return $this->render('report-asset');
+    }
+
 }
