@@ -21,6 +21,7 @@ $asset_path = Yii::$app->assetManager->getPublishedUrl('@app/themes/repair/asset
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="/warehouse/web/favicon-16x16.png" rel="icon" type="image/png" />
     <?= Html::csrfMetaTags() ?>
     <title><?php echo Html::encode($this->title); ?></title>
     <?php $this->head(); ?>
