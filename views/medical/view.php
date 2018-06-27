@@ -27,6 +27,9 @@ $this->title = $model->code;
     </div>
 </div>  --> 
 
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6" >
+
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -59,6 +62,59 @@ $this->title = $model->code;
             'brand',
             'asize',
             'model',
+            // 'serial_no',
+            // 'price',
+            // 'pur_date',
+            // 'doc_no',
+            // 'pur_docno',
+            // 'receive_date',
+            // 'bud_id',
+            // 'asset_note:ntext',
+            // 'pict_path',
+            // [
+            //     'attribute' => 'a_status',
+            //     'value' => function ($model){
+            //                 return $model->astatus->descriptions;
+            //     }
+            // ],
+        ],
+    ]) ?>
+
+   </div>
+    <div class="col-sm-6 col-md-6 col-lg-6" >
+
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            // 'code',
+            // 'sap_code',
+            // 'budget_year',
+            // 'regis_date',
+            // 'aname',
+            // 'dept',
+            // 'positions',
+            // 'floorno',
+            // 'roomno',
+            // [
+            //     'attribute' => 'groupid',
+            //     'value' => function ($model){
+            //                 return $model->group->description;
+            //     }
+            // ],
+            // [
+            //     'attribute' => 'catagory',
+            //     'value' => function ($model){
+            //                 $catagory = app\models\AssetAcatagory::find()
+            //                 ->where(['=','groupid',$model['groupid']])
+            //                 ->andWhere(['=','catagory',$model['catagory']])
+            //                 ->one();
+
+            //                 return $catagory['descriptions'];
+            //     }
+            // ],
+            // 'brand',
+            // 'asize',
+            // 'model',
             'serial_no',
             'price',
             'pur_date',
@@ -76,5 +132,8 @@ $this->title = $model->code;
             ],
         ],
     ]) ?>
+
+   </div>
+</div>
 
 </div>
