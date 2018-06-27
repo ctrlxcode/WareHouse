@@ -51,10 +51,11 @@ class AssetMaster extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['sap_code'], 'required'],
             [['regis_date', 'pur_date', 'receive_date'], 'safe'],
             [['price'], 'number'],
             [['asset_note'], 'string'],
-            [['sap_code', 'positions', 'brand', 'asize', 'model', 'pict_path'], 'string', 'max' => 50],
+            [['positions', 'brand', 'asize', 'model', 'pict_path'], 'string', 'max' => 50],
             [['budget_year'], 'string', 'max' => 4],
             [['aname'], 'string', 'max' => 150],
             [['dept'], 'string', 'max' => 8],
