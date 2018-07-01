@@ -4,17 +4,17 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Items */
+/* @var $model app\models\Order */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Items', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Orders', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="items-view">
+<div class="order-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <!-- <p>
+    <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
@@ -23,16 +23,20 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-    </p> -->
+    </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
-            'items_code',
-            'items_name',
-            'items_price',
-            'type_id',
+            'order_no',
+            'order_date',
+            'order_regist',
+            'order_group',
+            'order_dep',
+            'order_compan',
+            'order_total',
+            'order_image',
         ],
     ]) ?>
 
